@@ -31,5 +31,12 @@ git:
 
 	# git push 
 
+git_2:
+	git status
+	git add .
+	git commit -m "update makefile"
+	git pull origin data-visualization --rebase
+	git push origin HEAD:data-visualization
+
 
 
