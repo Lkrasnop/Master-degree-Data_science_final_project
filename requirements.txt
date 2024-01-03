@@ -1,0 +1,8 @@
+pandas
+statistics
+seaborn
+matplotlib 
+numpy
+seaborn
+black
+pylint

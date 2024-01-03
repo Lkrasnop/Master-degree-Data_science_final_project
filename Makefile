@@ -7,26 +7,23 @@ install:
 	pip install -r requirements.txt
 
 run:	install
-	python3 tes.py
+	python3 main.py
 
 format:
-	black only_class.py
+	black main.py
 
 lint: format
-	pylint --disable=R,C only_class.py
+	pylint --disable=R,C main.py
 
 remove:
 	rm -rf venv
 		# deactivate
 
-old_main:
+git:
 	git status
 	git add . &&\
-	git commit -m "create Makefile" &&\
-	# git branch -M main &&\
-	# git remote add origin https://github.com/Lkrasnop/test_vs_code.git &&\
+	git commit -m "add main.py + and requirements.txt" &&\
 	git push 
-	# -u origin main
 
 #add notes for upload to gitssssssssaaaassssaassדssss
 
