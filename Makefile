@@ -41,6 +41,6 @@ git_visual:
 git_prep:
 	git status
 	git add .
-	git commit -m "add venv - data preparation"
+	git commit -m "remove irrelevant notebook - data preparation"
 	git pull origin data-preparation --rebase
 	git push origin HEAD:data-preparation
