@@ -1,6 +1,9 @@
 venv:
-	python3 -m venv venv &&\
+	python3 -m venv venv 
 			#source venv/bin/activate   # On macOS and Linux
+
+activate:	venv
+	source venv/bin/activate
 
 install:		
 	pip install --upgrade pip &&\
@@ -22,7 +25,7 @@ remove:
 git:	
 	git status
 	git add . &&\
-	git commit -m "add main.py + and requirements.txt" &&\
+	git commit -m "update makefile" &&\
 	git push 
 
 
