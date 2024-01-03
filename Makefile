@@ -26,6 +26,7 @@ git:
 	git status
 	git add . &&\
 	git commit -m "update makefile" &&\
+	git branch -M data-visualization &&\
 	git push 
 
 
