@@ -27,7 +27,9 @@ git:
 	git add . &&\
 	git commit -m "update makefile" &&\
 	git branch -M data-visualization &&\
-	git push 
+	git push origin HEAD:data-visualization
+
+	# git push 
 
 
 
