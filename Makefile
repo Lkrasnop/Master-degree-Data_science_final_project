@@ -1,6 +1,6 @@
 venv:
-	python3 -m venv venv
-			# source venv/bin/activate   # On macOS and Linux
+	python3 -m venv venv &&\
+			#source venv/bin/activate   # On macOS and Linux
 
 install:		
 	pip install --upgrade pip &&\
@@ -19,7 +19,7 @@ remove:
 	rm -rf venv &&\
 		deactivate
 
-git:	remove
+git:	
 	git status
 	git add . &&\
 	git commit -m "add main.py + and requirements.txt" &&\
